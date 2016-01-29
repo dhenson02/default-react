@@ -10,7 +10,7 @@ and plenty more (see package.json for details).
 
 ## Setup
 
-```
+```bash
 npm install
 npm build # or build-dist, watch, or watch-dist
 npm start
