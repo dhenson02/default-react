@@ -1,20 +1,25 @@
-# fan2c
+# default-react
+
+### My boilerplate using 
+ - [Express JS](http://expressjs.com/) 4.x (eventually 5.x)
+ - [React](https://facebook.github.io/react/) >= 0.14.6
+ - [Babel](http://babeljs.io/) >= 6
+ - [Kube CSS Framework](https://imperavi.com/kube/)
+
+and plenty more (see package.json for details).
 
 ## Setup
 
 ```
 npm install
+npm build # or build-dist, watch, or watch-dist
 npm start
 ```
 
 ## Who this is for
 
-Players and commissioners of leagues belonging to [My Fantasy League](http://myfantasyleague.com)
+Me and anyone else loving React needing a very basic boilerplate to start from but not wanting to redo the entire freaking code like most the others available.
 
-## How to use
+## Credits
 
-### data/
-
-Store the long-time JSON results here.  Stuff like league settings, players, teams, and other stuff that won't change often.
-
-The other data (stats, updates, etc) can also be placed here but would be more beneficial to serve up on-demand from memory, depending on the user count.
+Please give credit to any of the authors of the attributed packages in the package.json file appropriately.  They all work very hard and deserve some extra traffic :)
