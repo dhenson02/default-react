@@ -4,7 +4,7 @@
   "description": "Boilerplate app for React.",
   "main": "server.js",
   "scripts": {
-    "start": "node --harmony_destructuring server.js",
+    "start": "node server.js",
     "watch": "npm run html && npm run js-watch && npm run css-watch",
     "watch-dist": "npm run html && npm run js-watch-dist && npm run css-watch",
     "build": "npm run html && npm run js-build && npm run css",
@@ -37,9 +37,10 @@
   },
   "homepage": "https://github.com/dhenson02/default-react#readme",
   "dependencies": {
+    "babel-plugin-lodash": "^3.1.4",
     "body-parser": "^1.14.2",
     "express": "^4.13.4",
-    "immutable": "^3.7.6",
+    "immutable": "^3.8.1",
     "lodash": "^4.12.0",
     "normalize.css": "^3.0.3",
     "react": "^15.1.0",

@@ -22,8 +22,10 @@ npm start
 
 ## Who this is for
 
-Me and anyone else loving React needing a very basic boilerplate to start from but not wanting to redo the entire freaking code like most the others available.
+Me and anyone else loving React, Redux and React Router who needs a very basic boilerplate to start from but not wanting to redo the entire freaking code like most the others available.
 
 ## Credits
 
 Please give credit to any of the authors of the attributed packages in the package.json file appropriately.  They all work very hard and deserve some extra traffic :)
+
+Most recent additions/setup of file structure was inspired by [Wes Bos](https://twitter.com/wesbos)'s talk at [learnredux.com](https://learnredux.com)
