@@ -1,73 +1,76 @@
 {
-	"name": "default-react",
-	"version": "1.0.0",
-	"description": "Boilerplate app for React.",
-	"main": "server.js",
-	"scripts": {
-		"start": "node --harmony_destructuring server.js",
-		"watch": "npm run html && npm run js-watch && npm run css-watch",
-		"watch-dist": "npm run html && npm run js-watch-dist && npm run css-watch",
-		"build": "npm run html && npm run js-build && npm run css",
-		"build-dist": "npm run html && npm run js-build-dist && npm run css-dist",
-		"js-build": "browserify -v -d -t babelify src/js/App.js -o dist/js/app.js",
-		"js-build-dist": "browserify -v -t babelify -t uglifyify src/js/App.js | npm run js-min",
-		"js-watch": "screen -dmS js-watch watchify -v -d -t babelify src/js/App.js -o dist/js/app.js",
-		"js-watch-dist": "screen -dmS js-watch-dist watchify -v -t babelify -t uglifyify src/js/App.js -o 'npm run js-min'",
-		"js-min": "uglifyjs -m --screw-ie8 -c > dist/js/app.js",
-		"css-pre": "postcss --use postcss-import --use autoprefixer src/css/styles.css | cssnano > src/css/_styles.css",
-		"css-watch": "screen -dmS css-watch postcss --watch --use postcss-import --use autoprefixer src/css/styles.css -o dist/css/styles.css",
-		"css": "npm run css-pre && npm run css-pure",
-		"css-dist": "npm run css-pre && npm run css-pure-dist",
-		"css-pure": "purifycss src/css/_styles.css src/index.html dist/js/app.js --out dist/css/styles.css",
-		"css-pure-dist": "purifycss src/css/_styles.css src/index.html dist/js/app.js --min --out dist/css/styles.css",
-		"html": "cp src/index.html dist/index.html"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/dhenson02/default-react.git"
-	},
-	"keywords": [
-        "react",
-        "boilerplate"
-	],
-	"author": "Deryck Henson (deryck.henson@gmail.com)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/dhenson02/default-react/issues"
-	},
-	"homepage": "https://github.com/dhenson02/default-react#readme",
-	"dependencies": {
-		"body-parser": "^1.14.2",
-		"express": "^4.13.4",
-		"fastclick": "^1.0.6",
-		"fastdom": "^1.0.0",
-		"immutable": "^3.7.6",
-		"normalize.css": "^3.0.3",
-		"react": "^0.14.6",
-		"react-dom": "^0.14.6",
-		"reqwest": "^2.0.5",
-		"socket.io": "^1.4.4"
-	},
-	"devDependencies": {
-		"autoprefixer": "^6.3.1",
-		"babel": "^6.3.26",
-		"babel-plugin-transform-object-rest-spread": "^6.3.13",
-		"babel-preset-es2015": "^6.3.13",
-		"babel-preset-react": "^6.3.13",
-		"babel-relay-plugin": "^0.6.3",
-		"babelify": "^7.2.0",
-		"browserify": "^13.0.0",
-		"critical": "^0.7.0",
-		"cssmin": "^0.4.3",
-		"cssnano": "^3.4.0",
-		"cssnano-cli": "^1.0.2",
-		"juice": "^1.9.0",
-		"postcss": "^5.0.14",
-		"postcss-cli": "^2.4.0",
-		"postcss-import": "^7.1.3",
-		"purify-css": "^1.0.17",
-		"uglify-js": "^2.6.1",
-		"uglifyify": "^3.0.1",
-		"watchify": "^3.7.0"
-	}
+  "name": "default-react",
+  "version": "1.0.0",
+  "description": "Boilerplate app for React.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --harmony_destructuring server.js",
+    "watch": "npm run html && npm run js-watch && npm run css-watch",
+    "watch-dist": "npm run html && npm run js-watch-dist && npm run css-watch",
+    "build": "npm run html && npm run js-build && npm run css",
+    "build-dist": "npm run html && npm run js-build-dist && npm run css-dist",
+    "js-build": "browserify -v -d -t babelify src/js/App.js -o dist/js/app.js",
+    "js-build-dist": "browserify -v -t babelify -t uglifyify src/js/App.js | npm run js-min",
+    "js-watch": "screen -dmS js-watch watchify -v -d -t babelify src/js/App.js -o dist/js/app.js",
+    "js-watch-dist": "screen -dmS js-watch-dist watchify -v -t babelify -t uglifyify src/js/App.js -o 'npm run js-min'",
+    "js-min": "uglifyjs -m --screw-ie8 -c > dist/js/app.js",
+    "css-pre": "postcss --use postcss-import --use autoprefixer src/css/styles.css | cssnano > src/css/_styles.css",
+    "css-watch": "screen -dmS css-watch postcss --watch --use postcss-import --use autoprefixer src/css/styles.css -o dist/css/styles.css",
+    "css": "npm run css-pre && npm run css-pure",
+    "css-dist": "npm run css-pre && npm run css-pure-dist",
+    "css-pure": "purifycss src/css/_styles.css src/index.html dist/js/app.js --out dist/css/styles.css",
+    "css-pure-dist": "purifycss src/css/_styles.css src/index.html dist/js/app.js --min --out dist/css/styles.css",
+    "html": "cp src/index.html dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhenson02/default-react.git"
+  },
+  "keywords": [
+    "react",
+    "boilerplate"
+  ],
+  "author": "Deryck Henson (deryck.henson@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhenson02/default-react/issues"
+  },
+  "homepage": "https://github.com/dhenson02/default-react#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "immutable": "^3.7.6",
+    "lodash": "^4.12.0",
+    "normalize.css": "^3.0.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.1",
+    "react-router-redux": "^4.0.4",
+    "redux": "^3.5.2",
+    "reqwest": "^2.0.5",
+    "socket.io": "^1.4.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "babel": "^6.3.26",
+    "babel-plugin-transform-object-rest-spread": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-relay-plugin": "^0.6.3",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "critical": "^0.7.0",
+    "cssmin": "^0.4.3",
+    "cssnano": "^3.4.0",
+    "cssnano-cli": "^1.0.2",
+    "juice": "^1.9.0",
+    "postcss": "^5.0.14",
+    "postcss-cli": "^2.4.0",
+    "postcss-import": "^7.1.3",
+    "purify-css": "^1.0.17",
+    "uglify-js": "^2.6.1",
+    "uglifyify": "^3.0.1",
+    "watchify": "^3.7.0"
+  }
 }

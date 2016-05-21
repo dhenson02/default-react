@@ -1,8 +1,12 @@
 # default-react
 
-### My boilerplate using 
+### My boilerplate using
  - [Express JS](http://expressjs.com/) 4.x (eventually 5.x)
- - [React](https://facebook.github.io/react/) >= 0.14.6
+ - [React](https://facebook.github.io/react/) >= 15.1.0
+ - [Redux](http://redux.js.org/)
+ - [React Redux](https://github.com/reactjs/react-redux)
+ - [React-Router](https://github.com/reactjs/react-router)
+ - [react-router-redux](https://github.com/reactjs/react-router-redux)
  - [Babel](http://babeljs.io/) >= 6
  - [Kube CSS Framework](https://imperavi.com/kube/)
 
